@@ -56,6 +56,20 @@ jobs:
   # vm jobs
   machine:
     machine: true
+    resource_class: medium
+    steps:
+      - run: |
+          echo $SLEEP
+          date
+          sleep $SLEEP
+          date
+          echo 'Done sleeping.'
+    environment:
+      SLEEP: 1
+
+  machine_large:
+    machine: true
+    resource_class: large
     steps:
       - run: |
           echo $SLEEP
@@ -198,6 +212,7 @@ workflows:
   vm_jobs:
     jobs:
       - machine
+      - machine_large
       - remote_docker
       - docker_layer_caching
       - machine_dlc
@@ -214,4 +229,3 @@ workflows:
           requires:
             - write_workspace
       - artifacts_test_results
-
