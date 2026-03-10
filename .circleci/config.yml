@@ -1,3 +1,6 @@
+# Copyright IBM Corp. 2017, 2020
+# SPDX-License-Identifier: MIT
+
 version: 2
 
 resource_job_defaults: &resource_job_defaults
