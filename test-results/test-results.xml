@@ -1,3 +1,8 @@
+<!--
+ Copyright IBM Corp. 2017, 2020
+ SPDX-License-Identifier: MIT
+-->
+
 <testsuite name="TAP Tests" tests="35" failures="0" errors="0" skipped="0" timestamp="Tue, 26 Sep 2017 20:35:21 GMT" time="12.208">
 <testcase classname="" name="client › modules › App › AppReducer › action for TOGGLE_ADD_POST is working" time="0"/>
 <testcase classname="" name="client › modules › App › AppReducer › getShowAddPost selector" time="0"/>
